@@ -2,8 +2,10 @@
 
 var aws = require('aws2js');
 var fs = require('fs');
+var path = require('path');
 
-var config = JSON.parse(fs.readFileSync('config.json', encoding="ascii"));
+var configFile = path.resolve(path.dirname(require.main.filename), 'config.json');
+var config = JSON.parse(fs.readFileSync(configFile, encoding="ascii"));
 
 fs.readFile(config.files, 'ascii', function (err, data) {
     if (err) throw err;
