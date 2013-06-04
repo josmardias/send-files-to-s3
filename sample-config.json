@@ -1,0 +1,11 @@
+{
+    "files": "/tmp/sample/changes.log",
+    "namespace": "/tmp/sample",
+    "bucket": "bucket name",
+    "accessKey": "access key",
+    "secretKey": "secret key",
+    "headers": {
+        "x-amz-storage-class": "REDUCED_REDUNDANCY",
+        "cache-control": "max-age=43200,must-revalidate"
+    }
+}
